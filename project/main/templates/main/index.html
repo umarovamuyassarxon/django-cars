@@ -1,0 +1,159 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="uz">-->
+<!--<head>-->
+<!--  <meta charset="UTF-8">-->
+<!--  <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--  <title>AutoDrive Premium</title>-->
+<!--  <script src="https://cdn.tailwindcss.com"></script>-->
+<!--  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">-->
+<!--  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>-->
+<!--  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">-->
+<!--</head>-->
+<!--<body class="bg-gray-100 text-gray-800">-->
+
+<!--&lt;!&ndash; Navbar &ndash;&gt;-->
+<!--<header class="bg-white shadow fixed w-full z-50">-->
+<!--  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">-->
+<!--    <h1 class="text-2xl font-bold">AutoDrive</h1>-->
+<!--    <nav id="menu" class="hidden md:flex space-x-6">-->
+<!--      <a href="#" class="hover:text-blue-600">Bosh sahifa</a>-->
+<!--      <a href="#" class="hover:text-blue-600">Mashinalar</a>-->
+<!--      <a href="#" class="hover:text-blue-600">Bron qilish</a>-->
+<!--      <a href="#" class="hover:text-blue-600">Aloqa</a>-->
+<!--    </nav>-->
+<!--    <button onclick="toggleMenu()" class="md:hidden text-xl">-->
+<!--      <i class="fas fa-bars"></i>-->
+<!--    </button>-->
+<!--  </div>-->
+
+<!--  &lt;!&ndash; Mobile Menu &ndash;&gt;-->
+<!--  <div id="mobileMenu" class="hidden flex-col bg-white px-4 pb-4 md:hidden">-->
+<!--    <a href="#" class="py-2">Bosh sahifa</a>-->
+<!--    <a href="#" class="py-2">Mashinalar</a>-->
+<!--    <a href="#" class="py-2">Bron qilish</a>-->
+<!--    <a href="#" class="py-2">Aloqa</a>-->
+<!--  </div>-->
+<!--</header>-->
+
+<!--&lt;!&ndash; Hero &ndash;&gt;-->
+<!--<section class="bg-gray-900 text-white py-32 text-center" data-aos="fade-up">-->
+<!--  <h2 class="text-5xl font-bold mb-4">Orzuyingizdagi mashinani haydang</h2>-->
+<!--  <p class="mb-6">Zamonaviy va premium avtomobillar</p>-->
+<!--  <button class="bg-blue-600 px-6 py-3 rounded-lg hover:bg-blue-700 transition">Ko‘rish</button>-->
+<!--</section>-->
+
+<!--&lt;!&ndash; Features &ndash;&gt;-->
+<!--<section class="py-16">-->
+<!--  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-8">-->
+<!--    <div class="bg-white p-6 rounded-2xl shadow text-center" data-aos="zoom-in">-->
+<!--      <i class="fas fa-car text-4xl text-blue-600 mb-4"></i>-->
+<!--      <h3 class="font-semibold text-xl">Turli xil mashinalar</h3>-->
+<!--    </div>-->
+<!--    <div class="bg-white p-6 rounded-2xl shadow text-center" data-aos="zoom-in" data-aos-delay="100">-->
+<!--      <i class="fas fa-shield-alt text-4xl text-blue-600 mb-4"></i>-->
+<!--      <h3 class="font-semibold text-xl">Xavfsizlik</h3>-->
+<!--    </div>-->
+<!--    <div class="bg-white p-6 rounded-2xl shadow text-center" data-aos="zoom-in" data-aos-delay="200">-->
+<!--      <i class="fas fa-dollar-sign text-4xl text-blue-600 mb-4"></i>-->
+<!--      <h3 class="font-semibold text-xl">Hamyonbop narxlar</h3>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+
+<!--&lt;!&ndash; Cars &ndash;&gt;-->
+<!--<section class="py-16 bg-gray-50">-->
+<!--  <div class="max-w-7xl mx-auto px-4">-->
+<!--    <h2 class="text-3xl font-bold text-center mb-10">Mashinalar</h2>-->
+<!--    <div class="grid md:grid-cols-3 gap-8">-->
+<!--      <div class="bg-white rounded-2xl shadow overflow-hidden hover:scale-105 transition" data-aos="fade-up">-->
+<!--        <img src="https://source.unsplash.com/400x250/?sport-car" class="w-full">-->
+<!--        <div class="p-4">-->
+<!--          <h3 class="font-semibold">Sport mashina</h3>-->
+<!--          <button class="text-blue-600 mt-2">Bron qilish</button>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="bg-white rounded-2xl shadow overflow-hidden hover:scale-105 transition" data-aos="fade-up" data-aos-delay="100">-->
+<!--        <img src="https://source.unsplash.com/400x250/?luxury-car" class="w-full">-->
+<!--        <div class="p-4">-->
+<!--          <h3 class="font-semibold">Hashamatli mashina</h3>-->
+<!--          <button class="text-blue-600 mt-2">Bron qilish</button>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--      <div class="bg-white rounded-2xl shadow overflow-hidden hover:scale-105 transition" data-aos="fade-up" data-aos-delay="200">-->
+<!--        <img src="https://source.unsplash.com/400x250/?electric-car" class="w-full">-->
+<!--        <div class="p-4">-->
+<!--          <h3 class="font-semibold">Elektr mashina</h3>-->
+<!--          <button class="text-blue-600 mt-2">Bron qilish</button>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+
+<!--&lt;!&ndash; Booking &ndash;&gt;-->
+<!--<section class="py-16" data-aos="fade-up">-->
+<!--  <div class="max-w-xl mx-auto bg-white p-8 rounded-2xl shadow">-->
+<!--    <h2 class="text-2xl font-bold mb-4 text-center">Mashina bron qilish</h2>-->
+<!--    <input type="text" placeholder="Ismingiz" class="w-full mb-3 p-2 border rounded">-->
+<!--    <input type="date" class="w-full mb-3 p-2 border rounded">-->
+<!--    <select class="w-full mb-3 p-2 border rounded">-->
+<!--      <option>Mashina tanlang</option>-->
+<!--      <option>Sport</option>-->
+<!--      <option>Hashamatli</option>-->
+<!--      <option>Elektr</option>-->
+<!--    </select>-->
+<!--    <button class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Tasdiqlash</button>-->
+<!--  </div>-->
+<!--</section>-->
+
+<!--&lt;!&ndash; Footer &ndash;&gt;-->
+<!--<footer class="bg-gray-900 text-white py-10 text-center">-->
+<!--  <p>© 2026 AutoDrive Premium</p>-->
+<!--  <div class="mt-4 space-x-4">-->
+<!--    <i class="fab fa-facebook"></i>-->
+<!--    <i class="fab fa-instagram"></i>-->
+<!--    <i class="fab fa-twitter"></i>-->
+<!--  </div>-->
+<!--</footer>-->
+
+<!--<script>-->
+<!--function toggleMenu(){-->
+<!--  document.getElementById('mobileMenu').classList.toggle('hidden');-->
+<!--}-->
+<!--AOS.init();-->
+<!--</script>-->
+
+<!--</body>-->
+<!--</html>-->
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<h1> Moshinalar</h1>
+
+{% for car in cars %}
+    <p><b>Nomi:</b> <a href="{% url 'detail' car.id %}">{{ car.name }}</a> </p><hr>
+{% endfor %}
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
